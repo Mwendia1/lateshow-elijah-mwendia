@@ -61,3 +61,6 @@ def create_appearance():
 
     except Exception as e:
         return jsonify({"errors": [str(e)]}), 400
+
+if __name__ == "__main__":
+    app.run(debug=True)
